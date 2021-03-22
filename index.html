@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home Page</title>
+</head>
+<body>
+    <div class="main">
+        <div class="top">
+        <div class="logo">
+            <h2>JobScout</h2>
+        </div> 
+        <div class="buttons">
+            <button class="btn" onclick="window.location='seeker.html'">seeker</button>
+            <button class="btn"  onclick="window.location='giver.html'">giver</button>
+        </div> 
+    </div>
+        <div class="slogan">
+            <h1>What you seek is seeking you!</h1>
+        </div>  
+        <div class="container">
+            <div class="mySlides fade">
+                <img src="Images/pexels-pixabay-327540.jpg" alt="Image1" style="width: 100%;">
+                <div class="text"><h2>Find Jobs</h2><i>"Choose a job you love, and you will never have to work a day in your life."</i></div>
+            </div>
+            <div class="mySlides fade">
+                <img src="Images/pexels-belle-co-1000445.jpg" alt="Image2" style="width: 100%;">
+                <div class="text"><h2>Find Teammates</h2><i>"Team is not a group of people, it is a group of people that trust each other."</i></div>
+            </div>
+            <div class="mySlides fade">
+                <img src="Images/pexels-vlada-karpovich-4050437.jpg" alt="Image3" style="width: 100%;">
+                <div class="text"><h2>Find Internship</h2><i>"There are so many things you can learn about.
+                    But you’ll miss the best things if you keep your eyes shut."</i></div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>

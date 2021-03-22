@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Flavors&family=Passion+One:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(41, 40, 40, 0.9);
+}
+
+.logo{
+    font-family: 'Flavors', cursive;
+    font-family: 'Passion One', cursive;
+    position: relative;
+    text-transform: uppercase;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 36px;
+    left: 50px;
+    top: 20px;
+    letter-spacing: 5px;
+    float: left;
+}
+
+.buttons{
+    float: right;
+    position: relative;
+    right: 50px;
+    top: 20px;
+}
+.btn{
+    border: 3px solid whitesmoke;
+    width: 120px;
+    height: 100%;
+    background: transparent;
+    color: whitesmoke;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 5px;
+    cursor: pointer;
+    padding: 5px;
+    font-weight: bold;
+    letter-spacing: normal;
+    border-radius: 10px;
+    box-shadow: 2px 3px whitesmoke;
+}
+.btn:hover{
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.slogan{
+  font-size: 20px;
+  margin: auto;
+  position: relative;
+  padding: 20px;
+  text-transform: uppercase;
+  color: whitesmoke;
+  text-align: center;
+  top: 5rem;
+  font-family: 'Roboto', sans-serif;
+}
+.mySlides {display: none}
+img {vertical-align: middle;
+border-radius: 20px;
+}
+
+.container {
+  max-width: 850px;
+  position: relative;
+  margin: auto;
+  top: 90px;
+  border-radius: 20px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 80%;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 80%;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.7);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 7px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  position: relative;
+  bottom: 480px;
+  right: 370px;
+}
+
+.active, .dot:hover {
+  background-color: #444;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+  
