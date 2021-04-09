@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #2c2b2c;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	height: 100vh;
+	margin: -20px 0 50px;
+}
+
+h1 {
+	font-weight: normal;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+h2 {
+	text-align: center;
+}
+
+p {
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	margin: 20px 0 30px;
+}
+
+span {
+	font-size: 12px;
+}
+
+a {
+	color: #333;
+	font-size: 14px;
+	text-decoration: none;
+	margin: 15px 0;
+}
+
+/* button {
+	border-radius: 20px;
+	background-color: #666666;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	
+} */
+button{
+    width: 100%;
+    background: transparent;
+    border: 3px solid snow;
+    border-radius: 10px;
+    font-size: 14px;
+    margin: 35px 0px 10px;
+    height: 32px;
+    color: whitesmoke;
+    padding: 0px 10px;
+    outline: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 2px 3px snow;
+}
+button:focus {
+	outline: none;
+}
+
+form {
+	background-color: #333;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+	text-align: center;
+}
+
+input {
+	background: transparent;
+    width: 100%;
+    border: 3px solid whitesmoke;
+    margin: 6px 0;
+    height: 32px;
+    border-radius: 5px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+    text-align: center;
+    color: snow;
+    box-shadow: 2px 3px whitesmoke;
+}
+textarea{
+    background: transparent;
+    width: 100%;
+    border: 3px solid whitesmoke;
+    margin: 6px 0;
+    height: 32px;
+    border-radius: 5px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+    text-align: left;
+    color: snow;
+    box-shadow: 2px 3px whitesmoke;
+    min-width: 100%;
+	max-width: 100%;
+    max-height: 30vh;
+}
+::placeholder{
+		font-size: 14px;
+		color: whitesmoke;
+		text-transform: uppercase;
+}
+.container {
+	/* background-color: rgb(70, 70, 70); */
+	border-radius: 20px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+				0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
+	width: 768px;
+	max-width: 100%;
+	min-height: 480px;
+	color: whitesmoke;
+}
+
+.form-container {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	transition: all 0.6s ease-in-out;
+}
+
+.sign-in-container {
+	left: 0;
+	width: 50%;
+	z-index: 2;
+}
+
+.overlay-container {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+	transition: transform 0.6s ease-in-out;
+	z-index: 100;
+}
+
+.overlay {
+	background: rgba(255, 255, 255, 0.918);
+	/* background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C); */
+	/* background: linear-gradient(to right, #746360, #836b70); */
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+	color: #FFFFFF;
+	position: relative;
+	left: -100%;
+	height: 100%;
+	width: 200%;
+  	transform: translateX(0);
+	transition: transform 0.6s ease-in-out;
+}
+
+.overlay-panel {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 40px;
+	text-align: center;
+	top: 0;
+	height: 100%;
+	width: 50%;
+	transform: translateX(0);
+	transition: transform 0.6s ease-in-out;
+}
+
+.overlay-right {
+	right: 0;
+	transform: translateX(0);
+}
+.social a {
+	z-index: 1000;
+	left: 400px;
+	top:50px;
+    color: rgb(41, 41, 41);
+	border: 1px solid #00000044;
+	border-radius: 50%;
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	margin: 30px 0;
+	height: 40px;
+	width: 40px;
+}
+
+.soc p {
+	z-index: 1000;
+	left: 450px;
+	top:-150px;
+    color: rgb(41, 41, 41);
+	display: flex;
+	position: relative;
+	text-align: center;
+	height: 39px;
+	width: 450px;
+}
+
+.social-container{
+	margin-top: 300px;
+}
+.social-container a {
+    color: rgb(41, 41, 41);
+	border: 1px solid #00000044;
+	border-radius: 50%;
+	display: inline-flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	margin: 0 5px;
+	padding: 1px;
+	height: 40px;
+	width: 40px;
+}
+
+.social-container p{
+	color: #2c2b2c;
+	font-style: bold;
+	margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
