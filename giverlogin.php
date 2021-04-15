@@ -10,6 +10,7 @@ mysqli_select_db($con,'seekers');
 $userName = $_POST['Name'];
 $email = $_POST['Email'];
 $password = $_POST['psw'];
+$error = "email/password incorrect";
 
 $s = "select * from giver where cmpemail = '$email' && password = '$password'";
 $res = mysqli_query($con,$s);
@@ -18,7 +19,8 @@ if($num == 1) {
     header('location:home.php');
 }
 else {
-    header('location:giver.html');
+    $_SESSION['error'] = $error;
+    header('location:giver.php');
 }
 
 ?>

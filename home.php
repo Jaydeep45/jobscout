@@ -15,11 +15,26 @@
         <label class="logo">Jobscout</label>
         <ul>
             <li><a class="active" href="home.php">Home</a></li>
-            <li><a href="#CV">CV Builder</a></li>
-            <li><a href="#discuss">Discuss</a><li>
-            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="comming.html">CV Builder</a></li>
+            <li><a href="comming.html">Discuss</a><li>
+            <li><a href="giver.html">Log out</a></li>
         </ul>
     </nav>
-    <h2>Welcome!</h2>
+    <h2>Welcome!</h2> 
+    <div class="field">
+    <fieldset>
+        <legend>Jobs</legend>
+    </fieldset>
+    <fieldset>
+        <legend>
+            Internship
+        </legend>
+    </fieldset>
+    <fieldset>
+        <legend>
+            Teammates
+        </legend>
+    </fieldset>
+    </div>
 </body>
 </html>

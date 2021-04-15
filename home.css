@@ -60,3 +60,20 @@ h2{
     text-transform: uppercase;
     top: 20px;
 }
+.field {
+    position: relative;
+    top: 20px;
+    margin: auto;
+}
+fieldset {
+    background-color: snow;
+    margin: 20px;
+    height: 150px;
+}
+legend {
+    background-color: #333;
+    color: whitesmoke;
+    padding: 5px 10px;
+    margin: 20px;
+    font-size: 20px;
+}
